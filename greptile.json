@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "name": "privacy",
+      "description": "Never reveal, infer, or reference names of individual contributors, maintainers, or users. Treat all personal identifiers (GitHub usernames, commit authors, email addresses) as confidential. Do not attribute code to specific persons."
+    },
+    {
+      "name": "architecture-focus",
+      "description": "Prioritize architectural analysis: data flow, module boundaries, component dependencies, and API contracts. Highlight separation of concerns and layering violations."
+    },
+    {
+      "name": "resource-efficiency",
+      "description": "Flag code that is wasteful with battery, memory, network, or storage. These are medical/health apps running on mobile devices with constrained resources. Prefer lazy loading, minimal polling, and efficient data structures."
+    },
+    {
+      "name": "data-minimization",
+      "description": "Flag any collection, transmission, or storage of health data beyond what is strictly necessary. Apply data minimization principles. Health data (glucose values, insulin doses, sensor data) is sensitive medical information."
+    },
+    {
+      "name": "kotlin-java-beginner",
+      "description": "Explain Kotlin and Java code in plain language. Avoid assuming knowledge of advanced JVM concepts, coroutines, or Android internals. When referencing patterns, briefly explain what they do."
+    },
+    {
+      "name": "repos",
+      "description": "Scope analysis to: heart4data/Juggluco, heart4data/cgm-remote-monitor, heart4data/AndroidAPS. These are interrelated CGM/diabetes management tools. Consider cross-repo data flows and API compatibility."
+    }
+  ]
+}
