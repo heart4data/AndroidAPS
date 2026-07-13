@@ -1,0 +1,36 @@
+{
+  "strictness": 2,
+  "commentTypes": ["logic", "syntax", "style"],
+  "triggerOnUpdates": true,
+  "context": {
+    "repos": ["heart4data/cgm-remote-monitor", "heart4data/Juggluco"]
+  },
+  "instructions": "This is an Android-based closed-loop insulin delivery system (APS) written in Kotlin/Java. It communicates with CGM sensors and pumps. Health data (glucose, insulin doses) is sensitive medical information.",
+  "rules": [
+    {
+      "id": "privacy",
+      "rule": "Never reveal, infer, or reference names of individual contributors, maintainers, or users. Treat all personal identifiers (GitHub usernames, commit authors, email addresses) as confidential. Do not attribute code to specific persons.",
+      "severity": "high"
+    },
+    {
+      "id": "architecture-focus",
+      "rule": "Prioritize architectural analysis: data flow, module boundaries, component dependencies, and API contracts. Highlight separation of concerns and layering violations.",
+      "severity": "medium"
+    },
+    {
+      "id": "resource-efficiency",
+      "rule": "Flag code that is wasteful with battery, memory, network, or storage. This is a medical app running on a mobile device with constrained resources. Prefer lazy loading, minimal polling, and efficient data structures.",
+      "severity": "medium"
+    },
+    {
+      "id": "data-minimization",
+      "rule": "Flag any collection, transmission, or storage of health data beyond what is strictly necessary. Apply data minimization principles. Health data (glucose values, insulin doses, sensor data) is sensitive medical information.",
+      "severity": "high"
+    },
+    {
+      "id": "kotlin-java-beginner",
+      "rule": "Explain Kotlin and Java code in plain language. Avoid assuming knowledge of advanced JVM concepts, coroutines, or Android internals. When referencing patterns, briefly explain what they do.",
+      "severity": "low"
+    }
+  ]
+}
